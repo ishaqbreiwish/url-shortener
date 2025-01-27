@@ -1,5 +1,5 @@
 # Use the official Go image as a base image
-FROM golang:1.20
+FROM golang:1.22
 
 # Set the working directory
 WORKDIR /app
@@ -12,6 +12,7 @@ RUN go mod download
 COPY . .
 
 # Build the Go app
+RUN go mod tidy
 RUN go build -o main .
 
 # Expose the application port
