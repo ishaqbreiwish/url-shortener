@@ -1,7 +1,5 @@
 module github.com/ishaqbreiwish/go-url-shortener
 
-go 1.22
-
 require (
 	github.com/gin-gonic/gin v1.10.0
 	github.com/go-redis/redis/v8 v8.11.5
